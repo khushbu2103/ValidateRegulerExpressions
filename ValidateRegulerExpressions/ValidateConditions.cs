@@ -29,8 +29,8 @@ namespace ValidateRegulerExpressions
 
         public static void ValidatePinCode()
         {
-            string Pattern = "^[0-9]{6}$";
-            string[] inputs = { "111", "306401" };
+            string Pattern = "^[0-9]{3}[ ]?[0-9]{3}$";
+            string[] inputs = { "306401", "306 401", "306  401" };
             foreach (string input in inputs)
             {
                 if (Regex.IsMatch(input, Pattern))
