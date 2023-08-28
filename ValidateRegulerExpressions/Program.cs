@@ -10,6 +10,10 @@ namespace ValidateRegulerExpressions
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+            ValidateConditions.ValidateConsicutiveCondition();
+            ValidateConditions.ValidatePinCode();
+            Console.ReadLine();
         }
     }
 }
