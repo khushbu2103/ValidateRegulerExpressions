@@ -18,10 +18,10 @@ namespace ValidateRegulerExpressions
 
             foreach (string input in inputs)
             {
-                if(Regex.IsMatch(input, Pattern))
-                
+                if (Regex.IsMatch(input, Pattern))
+
                     Console.WriteLine("{0} is Valid", input);
-                
+
                 else
                     Console.WriteLine("{0} is Invalid", input);
             }
@@ -40,6 +40,23 @@ namespace ValidateRegulerExpressions
                 else
                     Console.WriteLine("{0} is Invalid", input);
             }
+        }
+
+        public static void ValidateEmail()
+        {
+            string Pattern = "^abc(\\.[a-z]+)@bridgelabz\\.co\\.in$";
+             string[] inputs = { "abc.xyz@bridgelabz.co.in" };
+           
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, Pattern))
+
+                    Console.WriteLine("\n{0} is Valid", input);
+
+                else
+                    Console.WriteLine("\n{0} is Invalid", input);
+            }
+;
         }
     }
 }

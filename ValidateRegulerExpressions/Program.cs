@@ -13,6 +13,7 @@ namespace ValidateRegulerExpressions
             Console.WriteLine("Hello World");
             ValidateConditions.ValidateConsicutiveCondition();
             ValidateConditions.ValidatePinCode();
+            ValidateConditions.ValidateEmail();
             Console.ReadLine();
         }
     }
